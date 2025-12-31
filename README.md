@@ -1,5 +1,5 @@
 # Battleship
-C++ model of the popular game "Battleship", supporting player vs player and player vs bot.
+This project is for a C++ model of the popular game "Battleship", supporting player vs player and player vs bot.
 
 Battleship is a 2-player game where on a 10x10 board, each player places ships on certain cells which are unknown to the other player. Players take turn guessing cells on the board, and are informed whether their guess hit the other player's boat. Once all cells containing a player's ship has been hit, that ship is sunken. The first player to sink all of the others' boats is the winner.
 
@@ -8,8 +8,7 @@ Battleship is a 2-player game where on a 10x10 board, each player places ships o
 At the start of the game, the program will ask two things:
 1) Classic mode or Russian mode
 
-
-![](ClassicOrRussian.png)
+<img src="ClassicOrRussian.png" width="400">
 
 Classic is standard Battleship, where each player has boats of length 5,4,3,3, and 2.
 
@@ -21,13 +20,13 @@ After the player chooses the mode, by inputting 'c' or 'r', they are asked
   
 2) whether to place ships manually or use the built-in randomize function
 
-![]("ManualOrRandom.png)
+<img src="ManualOrRandom.png" width="400">
 
 using the randomize function by inputting 'r' will lead to the built-in randomize function being called. This is a heuristic function that places the player's ships "randomly" by randomly choosing an avaliable square and then randomly choosing an available direction to extend that boat, then placing it. This process is repeated until all are placed.
 
 using the 'm' selection will allow the player to manually input each of their boats' positions as follows:
 
-![](ManualPlacement.png)
+<img src="ManualPlacement.png" width="400">
 
 The player will be asked the starting square of their boat, and then the direction in which it will extend, where they indicate that through the characters 'u' for up, 'r' for right, etc. All inputs are validated and allow re-input.
 
@@ -43,7 +42,7 @@ A sample run of a turn is shown below
 
 ## Sample Turn
 
-![](SampleTurn.png)
+<img src="SampleTurn.png" width="400">
 
 In this sample turn, the player is playing against the bot. They fire at D5 and the program returns "Miss." meaning that now it is the bot's turn. The bot fires at C5 and also misses. Later, both the player's own board and the bot's board are printed. Yet, the player isnt shown the boats of the bot. D5 and C5 are now colored white to reflect the recent guesses.
 
